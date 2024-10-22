@@ -8,7 +8,6 @@
 #ifndef INC_APP_BME280_H_
 #define INC_APP_BME280_H_
 
-#include "main.h"
 #include "bme280.h"
 #include "logger.h"
 
