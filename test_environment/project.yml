@@ -39,7 +39,6 @@
     - ../I2C_BME248_ComPolling/App/Src
   :support:
     - test/support
-    - test/unit_test/I2C/inc
   :libraries: []
 
 :defines:
@@ -74,9 +73,13 @@
 :gcov:
   :reports:
     - HtmlDetailed
+    - Cobertura
   :gcovr:
     :html_medium_threshold: 75
     :html_high_threshold: 90
+  :uncovered_ignore_list:
+    - ../I2C_BME248_ComPolling/App/Src/app_bme280.c
+    - ../I2C_BME248_ComPolling/App/Src/logger.c
 
 #:tools:
 # Ceedling defaults to using gcc for compiling, linking, etc.
@@ -101,4 +104,7 @@
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
+    - gcov
+    - xml_tests_report
+    - junit_tests_report
 ...

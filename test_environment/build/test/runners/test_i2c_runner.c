@@ -12,7 +12,14 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_config(void);
+extern void test_user_i2c_read_transmit_and_receive_success(void);
+extern void test_user_i2c_read_transmit_error(void);
+extern void test_user_i2c_read_transmit_success_receive_failure(void);
+extern void test_user_i2c_write_success(void);
+extern void test_user_i2c_write_transmit_error(void);
+extern void test_user_i2c_write_zero_length(void);
+extern void test_user_i2c_read_null_interface_pointer(void);
+extern void test_user_i2c_write_null_interface_pointer(void);
 
 
 /*=======Mock Management=====*/
@@ -80,7 +87,14 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_i2c.c");
-  run_test(test_config, "test_config", 22);
+  run_test(test_user_i2c_read_transmit_and_receive_success, "test_user_i2c_read_transmit_and_receive_success", 28);
+  run_test(test_user_i2c_read_transmit_error, "test_user_i2c_read_transmit_error", 49);
+  run_test(test_user_i2c_read_transmit_success_receive_failure, "test_user_i2c_read_transmit_success_receive_failure", 69);
+  run_test(test_user_i2c_write_success, "test_user_i2c_write_success", 90);
+  run_test(test_user_i2c_write_transmit_error, "test_user_i2c_write_transmit_error", 112);
+  run_test(test_user_i2c_write_zero_length, "test_user_i2c_write_zero_length", 136);
+  run_test(test_user_i2c_read_null_interface_pointer, "test_user_i2c_read_null_interface_pointer", 153);
+  run_test(test_user_i2c_write_null_interface_pointer, "test_user_i2c_write_null_interface_pointer", 170);
 
   CMock_Guts_MemFreeFinal();
   return UnityEnd();

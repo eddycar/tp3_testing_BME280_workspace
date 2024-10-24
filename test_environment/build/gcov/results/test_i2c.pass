@@ -1,0 +1,46 @@
+---
+:source:
+  :path: test/unit_test/I2C
+  :file: test_i2c.c
+:successes:
+- :test: test_user_i2c_read_transmit_and_receive_success
+  :line: 28
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_read_transmit_error
+  :line: 49
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_read_transmit_success_receive_failure
+  :line: 69
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_write_success
+  :line: 90
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_write_transmit_error
+  :line: 112
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_write_zero_length
+  :line: 136
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_read_null_interface_pointer
+  :line: 153
+  :message: ''
+  :unity_test_time: 0
+- :test: test_user_i2c_write_null_interface_pointer
+  :line: 170
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 8
+  :passed: 8
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.001546585997857619

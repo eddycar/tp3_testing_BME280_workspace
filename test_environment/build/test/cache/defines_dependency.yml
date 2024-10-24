@@ -1,5 +1,5 @@
 ---
-"../I2C_BME248_ComPolling/App/Src/I2C.c":
-- TEST
 build/test/mocks/mock_stm32wlxx_hal.c:
+- TEST
+"../I2C_BME248_ComPolling/App/Src/I2C.c":
 - TEST
