@@ -8,8 +8,8 @@
 #ifndef INC_APP_BME280_H_
 #define INC_APP_BME280_H_
 
+#include <logger.h>
 #include "bme280.h"
-#include "logger.h"
 
 typedef struct bme280_dev  bme280_dev_t;
 typedef struct bme280_data bme280_data_t;

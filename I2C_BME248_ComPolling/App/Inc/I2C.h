@@ -8,8 +8,8 @@
 #ifndef INC_I2C_H_
 #define INC_I2C_H_
 
+#include <logger.h>
 #include "stm32wlxx_hal.h"
-#include "logger.h"
 
 /**
  * @brief Reads data from the I2C device at the specified register address.

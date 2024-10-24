@@ -36,6 +36,7 @@
 
 /********************** inclusions *******************************************/
 
+#include <logger.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -43,7 +44,6 @@
 
 #include "main.h"
 
-#include "logger.h"
 
 /********************** macros and definitions *******************************/
 
